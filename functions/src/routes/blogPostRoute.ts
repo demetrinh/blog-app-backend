@@ -6,7 +6,7 @@ import BlogPost from "../models/BlogPost";
 const routes = express.Router();
 
 // GET /blog
-routes.get("/", async (req, res) => {
+routes.get("/blog", async (req, res) => {
   try {
     const client = await getClient();
     const results = await client
